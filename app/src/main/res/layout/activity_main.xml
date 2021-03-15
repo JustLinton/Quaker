@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+
+
+
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/list"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9932CC">
+
+        <RelativeLayout
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#BA55D3"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:id="@+id/upBtnWr"
+                >
+                <Button
+                    android:layout_marginStart="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:textSize="12sp"
+                    android:background="#D8BFD8"
+                    android:text="upgrade"
+                    android:id="@+id/upBtn"
+                    />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/minMag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:layout_marginStart="10dp"
+                android:textSize="18sp"
+                android:layout_marginEnd="10dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/upBtnWr"
+                android:textColor="#FFFFFF">
+            </TextView>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:id="@+id/dnBtnWr"
+                android:layout_toRightOf="@id/minMag"
+                >
+                <Button
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:textSize="12sp"
+                android:background="#D8BFD8"
+                android:text="dgrade"
+
+                android:id="@+id/dnBtn"
+                />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/px2BtnWr"
+                android:background="?android:selectableItemBackground"
+                android:id="@+id/px1BtnWr">
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:textSize="12sp"
+                android:background="#D8BFD8"
+                android:layout_marginEnd="10dp"
+                android:text="mag"
+
+                android:id="@+id/magPxBtn"
+                >
+
+            </Button></LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:id="@+id/px2BtnWr"
+                android:layout_alignParentEnd="true"
+                >
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:textSize="12sp"
+                android:background="#D8BFD8"
+                android:text="date"
+
+                android:id="@+id/datePxBtn"
+                android:layout_marginEnd="10dp"
+                />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>
